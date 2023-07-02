@@ -1,0 +1,11 @@
+.click-me,
+.no {
+	font-size: 30px;
+}
+.click-me {
+	color: white;
+	background-color: black;
+}
+.no {
+	background-color: rgb(235, 235, 130);
+}
