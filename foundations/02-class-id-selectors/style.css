@@ -1,25 +1,19 @@
-* {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.odd {
-	background-color: red;
-}
-.N1 {
+body {
+	font-family: Verdana, "DejaVu Sans", sans-serif;
 	font-size: 20px;
 }
-#N2 {
-	color: blue;
-	font-size: 40px;
-}
-.N3 {
-	font-size: 32px;
+.odd {
+	background-color: rgb(248, 174, 174);
 }
 
-#N4 {
-	font-weight: bold;
-	font-size: 30px;
-	background-color: green;
+.adjusted-font-size {
+	font-size: 32px;
 }
-.N5 {
-	font-size: 25px;
+#two {
+	font-size: 40px;
+	color: rgb(76, 76, 243);
+}
+#four {
+	background-color: green;
+	font-weight: bold;
 }
