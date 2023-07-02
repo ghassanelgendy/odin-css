@@ -1,0 +1,25 @@
+* {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.odd {
+	background-color: red;
+}
+.N1 {
+	font-size: 20px;
+}
+#N2 {
+	color: blue;
+	font-size: 40px;
+}
+.N3 {
+	font-size: 32px;
+}
+
+#N4 {
+	font-weight: bold;
+	font-size: 30px;
+	background-color: green;
+}
+.N5 {
+	font-size: 25px;
+}
