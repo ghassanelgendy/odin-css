@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../assets/style.css" />
+		<title>Spanning & Placing Cardio!</title>
+	</head>
+	<body>
+		<style>
+			:root {
+				--yellow: #ffc600;
+				--black: #272727;
+			}
+
+			html {
+				/* border-box box model allows us to add padding and border to our elements without increasing their size */
+				box-sizing: border-box;
+				/* A system font stack so things load nice and quick! */
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+					Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+					"Segoe UI Symbol";
+				font-weight: 900;
+				font-size: 10px;
+				color: var(--black);
+				text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+			}
+
+			/*
+			  WAT IS THIS?!
+			  We inherit box-sizing: border-box; from our <html> selector
+			  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+			*/
+			*,
+			*:before,
+			*:after {
+				box-sizing: inherit;
+			}
+
+			body {
+				background-image: url("./images/topography.svg"),
+					linear-gradient(110deg, #f93d66, #6d47d9);
+				background-size: 340px, auto;
+				min-height: calc(100vh - 100px);
+				margin: 50px;
+				/* background: white; */
+				background-attachment: fixed;
+				letter-spacing: -1px;
+			}
+
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+				margin: 0 0 5px 0;
+			}
+			/* Each item in our grid will contain numbers */
+			.item {
+				/* We center the contents of these items. You can also do this with flexbox too! */
+				display: grid;
+				justify-content: center;
+				align-items: center;
+				border: 5px solid rgba(0, 0, 0, 0.03);
+				border-radius: 3px;
+				font-size: 35px;
+				background-color: var(--yellow); /* best colour */
+			}
+
+			.item p {
+				margin: 0 0 5px 0;
+			}
+		</style>
+		<div class="container">
+			<div class="item item1">Item 01</div>
+			<div class="item item2">Item 02</div>
+			<div class="item item3">Item 03</div>
+			<div class="item item4">Item 04</div>
+			<div class="item item5">Item 05</div>
+			<div class="item item6">Item 06</div>
+			<div class="item item7">Item 07</div>
+			<div class="item item8">Item 08</div>
+			<div class="item item9">Item 09</div>
+			<div class="item item10">Item 10</div>
+			<div class="item item11">Item 11</div>
+			<div class="item item12">Item 12</div>
+			<div class="item item13">Item 13</div>
+			<div class="item item14">Item 14</div>
+			<div class="item item15">Item 15</div>
+			<div class="item item16">Item 16</div>
+			<div class="item item17">Item 17</div>
+			<div class="item item18">Item 18</div>
+			<div class="item item19">Item 19</div>
+			<div class="item item20">Item 20</div>
+		</div>
+
+		<style>
+			.container {
+				display: grid;
+				grid-gap: 20px;
+				border: 10px solid var(--yellow);
+				grid-template-columns: repeat(auto-fill, 150px);
+			}
+		</style>
+	</body>
+</html>

@@ -89,3 +89,32 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* solution */
+.container {
+  display: grid;
+  gap: 0.8em;
+  grid-template-areas:
+    "hd hd"
+    "nav art"
+    "ft ft "
+}
+
+.footer {
+  grid-area: ft;
+}
+
+.article {
+  grid-area: art;
+
+}
+
+.header {
+  grid-area: hd;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.logo {
+  grid-column: 1 /2;
+}
