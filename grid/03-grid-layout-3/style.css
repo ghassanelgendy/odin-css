@@ -93,28 +93,50 @@
 /* solution */
 .container {
   display: grid;
-  gap: 0.8em;
-  grid-template-areas:
-    "hd hd"
-    "nav art"
-    "ft ft "
+  gap: 5px;
+  grid-template-columns: 1fr 4fr;
 }
 
-.footer {
-  grid-area: ft;
+
+.header {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  margin: 0;
+  list-style: none;
+}
+
+.menu {
+  padding: 0;
+}
+
+.sidebar {
+  display: grid;
+  gap: 20px;
+  grid-row: span 2;
+  grid-template-rows: repeat(auto-fit, minmax(40px, 1fr));
+}
+
+.nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .article {
-  grid-area: art;
-
-}
-
-.header {
-  grid-area: hd;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 }
 
-.logo {
-  grid-column: 1 /2;
+.footer {
+  grid-column: 1/-1;
 }
